@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6</title>
+</head>
+
+<body>
+    <script>
+        let book = {
+            bookId: "mã sách",
+            bookName: "tên sách",
+            price: "giá sách",
+            author: "Các tác giả sách",
+            bookStatus: "trạng thái sách",
+            inputData: function () { },
+            displayData: function () { }
+        };
+
+        function inputData(bookId, bookName, price, author, bookStatus) {
+            this.bookId = bookId;
+            this.bookName = bookName;
+            this.price = price;
+            this.author = author;
+            this.bookStatus = bookStatus;
+        };
+        let book1 = new inputData("01", "Tiếng Nhật", 1000, "NXB", "Đang bán")
+        console.log("Thông tin book", book1);
+
+        inputData.prototype.displayData = function(){
+            console.log("mã của sách là", this.bookId);
+            console.log("tên của sách là", this.bookName);
+            console.log("giá của sách là", this.price);
+            console.log("Các tác giả của sách là", this.author);
+            console.log("Trạng thái của sách là", this.bookStatus);
+         
+        };
+        book1.displayData();
+
+        
+
+    </script>
+</body>
+
+</html>

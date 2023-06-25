@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+<body>
+    <script>
+        let computer = {
+            value1: 10,
+            value2: 200,
+            Read: function(num1, num2) {                
+                   this.value1 = num1;
+                   this.value2 = num2;
+        
+            },
+            Sum: function(){
+                return this.value1 + this.value2;
+            },
+            Mul: function() {
+                 return this.value1 * this.value2;
+            }
+
+        };
+        console.log(computer.Sum());
+        console.log(computer.Mul());
+
+    </script>
+</body>
+</html>

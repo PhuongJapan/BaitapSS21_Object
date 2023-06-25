@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+</head>
+<body>
+    <script>
+      let menu = {
+        width: 20,
+        height: 30,
+        title: "Food"
+      }  
+      let menuKey = Object.keys(menu);
+      let result = 1;
+      for (let index = 0; index < menuKey.length; index++) {
+        if (!isNaN(menu[menuKey[index]])) {
+          result*=menu[menuKey[index]]          
+        }              
+      };
+      console.log("Kết quả là:", result);      
+      
+
+
+
+    </script>
+</body>
+</html>
